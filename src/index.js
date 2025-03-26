@@ -2,6 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 
+import "./index.css";
+
+// contexts
+import { ThemeProvider } from "./contexts/ThemeContext";
+
 // bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -17,13 +22,13 @@ import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter basename="/">
+  <Provider store={store}>
+    <BrowserRouter basename="/">
+      <ThemeProvider>
         <App />
-      </BrowserRouter>
-    </Provider>
-  </React.StrictMode>
+      </ThemeProvider>
+    </BrowserRouter>
+  </Provider>
 );
 
 reportWebVitals();

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+/* LIGHT MODE */
+body.light {
+  background-color: #efefef;
+  color: #242423;
+}
+
+body.light header {
+  background-color: #ffffff;
+  color: #242423;
+}
+
+body.light footer {
+  background-color: #ffffff;
+  color: #242423;
+  padding: 1rem;
+}
+
+body.light .nav-space {
+  height: 4px;
+  background-color: #efefef;
+}
+
+/* DARK MODE */
+body.dark {
+  background-color: #333533;
+  color: #ffffff;
+}
+
+body.dark header {
+  background-color: #242423;
+  color: #ffffff !important;
+}
+
+body.dark a {
+  color: #ffffff !important;
+}
+
+body.dark footer {
+  background-color: #242423;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+body.dark .nav-space {
+  height: 4px;
+  background-color: #333533;
+}
+
+.btn-primary {
+  background-color: #e62629 !important;
+  border-color: #e62629 !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: #c51f21 !important;
+  border-color: #b11b1d !important;
+}
