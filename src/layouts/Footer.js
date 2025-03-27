@@ -11,7 +11,7 @@ const Footer = () => {
           <Col md={6}>
             <div className="d-flex flex-column text-start">
               <a className="navbar-brand" href="/">
-                <img src={Logo} alt="HyperUI Logo" width="150" />
+                <img src={Logo} alt="hyperui Logo" width="200" />
               </a>
               <p className="mt-4 fw-medium" style={{ fontSize: "0.7rem" }}>
                 Türkiyenin En Büyük Oyuncu Pazarı: Sevdiğiniz oyunlar için epin,
@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="nav-space"></div>
 
         <h6 className="mb-2 mt-4 " style={{ fontSize: "0.7rem" }}>
-          © {new Date().getFullYear()} HyperUI. Tüm hakları saklıdır.
+          © {new Date().getFullYear()} hyperui. Tüm hakları saklıdır.
         </h6>
       </div>
     </footer>

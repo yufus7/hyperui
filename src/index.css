@@ -16,6 +16,10 @@ body.light header {
   color: #242423;
 }
 
+body.light a {
+  color: #242423 !important;
+}
+
 body.light footer {
   background-color: #ffffff;
   color: #242423;
@@ -29,12 +33,12 @@ body.light .nav-space {
 
 /* DARK MODE */
 body.dark {
-  background-color: #333533;
+  background: linear-gradient(to bottom, #1a0918, #110c15);
   color: #ffffff;
 }
 
 body.dark header {
-  background-color: #242423;
+  background-color: #0e1015;
   color: #ffffff !important;
 }
 
@@ -43,19 +47,19 @@ body.dark a {
 }
 
 body.dark footer {
-  background-color: #242423;
+  background-color: #0e1015;
   color: #ffffff;
   padding: 1rem;
 }
 
 body.dark .nav-space {
   height: 4px;
-  background-color: #333533;
+  background: linear-gradient(to bottom, #1a0918, #110c15);
 }
 
 .btn-primary {
-  background-color: #e62629 !important;
-  border-color: #e62629 !important;
+  background-color: #e9213d !important;
+  border-color: #e9213d !important;
   color: white !important;
 }
 

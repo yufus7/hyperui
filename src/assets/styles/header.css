@@ -1,0 +1,162 @@
+.header {
+  position: relative;
+}
+
+.navbar-header {
+  height: 30px;
+  background-color: #e9213d !important;
+  position: relative;
+}
+
+body .menu-link-header {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.navbar-brand img {
+  transition: transform 0.3s;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.theme-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch input[type="checkbox"] {
+  display: none;
+}
+
+.switch-label {
+  display: inline-block;
+  width: 46px;
+  height: 23px;
+  background-color: #fff;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+body.light .switch-label {
+  background-color: #e9213d;
+}
+
+.switch-ball {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  background-color: #e9213d;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+body.light .switch-ball {
+  background-color: #fff;
+}
+
+.theme-switch input:checked + .switch-label .switch-ball {
+  transform: translateX(22px);
+}
+
+.theme-text {
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+/* Menü */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.menu-link.active {
+  color: #e9213d !important;
+}
+
+.menu-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Hamburger ikon */
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.desktop-theme-switch {
+  display: block;
+}
+
+.mobile-theme-switch {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+  }
+  .desktop-theme-switch {
+    display: none;
+  }
+
+  .bottom-navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  body.dark .bottom-navbar {
+    background-color: #e9213d;
+  }
+
+  .bottom-navbar.open {
+    display: block;
+  }
+
+  .bottom-navbar .navbar-menu {
+    flex-direction: column;
+  }
+
+  .bottom-navbar .menu-item {
+    margin: 0.5rem 0;
+  }
+
+  .mobile-theme-switch {
+    display: flex;
+  }
+}
