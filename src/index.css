@@ -54,7 +54,7 @@ body.dark footer {
 
 body.dark .nav-space {
   height: 4px;
-  background: linear-gradient(to bottom, #1a0918, #110c15);
+  background: #e9213d;
 }
 
 .btn-primary {
