@@ -12,7 +12,12 @@ import Logo from "../assets/logo/hyper_logo.png";
 
 // icons
 import { GiSpellBook, GiSwordsEmblem } from "react-icons/gi";
-import { FaCrosshairs, FaGamepad } from "react-icons/fa";
+import {
+  FaCrosshairs,
+  FaGamepad,
+  FaGithubSquare,
+  FaLinkedin,
+} from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Header = () => {
@@ -27,10 +32,20 @@ const Header = () => {
         <div className="container h-100 pt-1 pb-1">
           <ul className="navbar-menu">
             <li className="menu-item">
-              <div className="menu-link-header">Github</div>
+              <div className="menu-link-header">
+                <a href="https://github.com/yufus7" target="blank">
+                  <FaGithubSquare className="menu-icon" />
+                  Github
+                </a>
+              </div>
             </li>
             <li className="menu-item">
-              <div className="menu-link-header">Linkedin</div>
+              <div className="menu-link-header">
+                <a href="https://www.linkedin.com/in/yufus/" target="blank">
+                  <FaLinkedin className="menu-icon" />
+                  Linkedin
+                </a>
+              </div>
             </li>
           </ul>
         </div>
