@@ -50,10 +50,7 @@ const Home = () => {
 
   if (productsLoading) {
     return (
-      <div
-        className="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
-        style={{ zIndex: 1050 }}
-      >
+      <div className="w-100 h-100 d-flex justify-content-center align-items-center">
         <Spinner />
       </div>
     );
@@ -61,27 +58,35 @@ const Home = () => {
 
   return (
     <div>
-      <Row>
-        {currentProducts.map((item, index) => (
-          <Col
-            key={index}
-            xl="3"
-            lg="4"
-            md="6"
-            sm="6"
-            xs="12"
-            className="mb-4 mt-4"
-          >
-            <ProductCard product={item} />
-          </Col>
-        ))}
-      </Row>
+      {currentProducts.length === 0 ? (
+        <div className="w-100 h-100 d-flex justify-content-center align-items-center">
+          <h3>Ürün Bulunamadı!</h3>
+        </div>
+      ) : (
+        <div>
+          <Row>
+            {currentProducts.map((item, index) => (
+              <Col
+                key={index}
+                xl="3"
+                lg="4"
+                md="6"
+                sm="6"
+                xs="12"
+                className="mb-4 mt-4"
+              >
+                <ProductCard product={item} />
+              </Col>
+            ))}
+          </Row>
 
-      <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={handlePageChange}
-      />
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={handlePageChange}
+          />
+        </div>
+      )}
     </div>
   );
 };
