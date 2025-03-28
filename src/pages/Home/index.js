@@ -9,6 +9,7 @@ import { Col, Row, Spinner } from "reactstrap";
 
 // components and page
 import Pagination from "../../components/Pagination";
+import ProductCard from "./ProductCard";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -64,29 +65,14 @@ const Home = () => {
         {currentProducts.map((item, index) => (
           <Col
             key={index}
-            xxl="2"
             xl="3"
-            lg="3"
-            md="3"
+            lg="4"
+            md="6"
             sm="6"
             xs="12"
             className="mb-4 mt-4"
           >
-            <div style={{ height: "300px", cursor: "pointer" }}>
-              <img
-                src={item.productData.productMainImage}
-                alt={item.productName}
-                style={{
-                  height: "250px",
-                  width: "100%",
-                  objectFit: "cover",
-                  borderRadius: "4px",
-                }}
-              />
-              <h6 className="mt-2 text-truncate" style={{ fontSize: "14px" }}>
-                {item.productName}
-              </h6>
-            </div>
+            <ProductCard product={item} />
           </Col>
         ))}
       </Row>
