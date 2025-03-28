@@ -31,7 +31,7 @@ Projede modern React ekosistemi kullanılarak, responsive bir ürün listeleme s
    Terminal veya komut satırında aşağıdaki komutu çalıştırarak projeyi bilgisayarınıza klonlayın:
 
    ```bash
-   git clone [<REPO_URL>](https://github.com/yufus7/hyperui)
+   git clone https://github.com/yufus7/hyperui
    ```
 
 2. **Proje Dizinine Geçin:**  
